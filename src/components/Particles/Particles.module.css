@@ -1,0 +1,6 @@
+@import "../../vars.css";
+
+.tsParticles {
+  position: absolute;
+  height: 100vh;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Airbnb Reviews",
+    "imageSrc": "projects/airbnb-reviews.png",
+    "description": "Fullstack app for guests to review their recent Airbnb visit and search for their next location.",
+    "skills": ["React", "Express", "Node", "MongoDB", "Heroku"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Parkinson's Disease AI",
+    "imageSrc": "projects/determined-ai.png",
+    "description": "Multi-layer neural network predicting the progression of Parkinson's Disease in a patient.",
+    "skills": ["Tensorflow", "Determined", "Pandas", "Numpy", "AWS"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "RAIInet",
+    "imageSrc": "projects/raiinet.png",
+    "description": "Multiplayer strategy game similar to chess players try to score 4 points using tactics and abilities.",
+    "skills": ["C++", "XMing"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]
