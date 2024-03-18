@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
 export const About = () => {
+  const { ref: firstAboutRef, inView: firstAboutVisible } = useInView({
+    threshold: 1.0,
+    triggerOnce: true,
+  });
+
+  const { ref: secondAboutRef, inView: secondAboutVisible } = useInView({
+    threshold: 1.0,
+    triggerOnce: true,
+  });
+
   return (
     <div id="about" className={styles.about}>
       <section className={styles.container}>
@@ -16,22 +27,58 @@ export const About = () => {
               className={styles.aboutImage}
             />
           </div>
+
           <div className={styles.infoContainer}>
-            <p className={styles.infoText}>
-              Hey! I'm a third year Computer Science student at the University
-              of Waterloo. I love learning{" "}
-              <span style={{ color: "yellow" }}>new technologies</span> and
-              writing
-              <span style={{ color: "lightgreen" }}> efficient code</span>. From
-              building responsive sites and developing optimized APIs to
-              creating LLMs and CNNs, I'm passionate about everything fullstack
-              and AI. <br></br> <br></br>
-              Outside of programming, I like soccer, travelling the world, and
-              competing in math and music competitions at the{" "}
-              <span style={{ fontWeight: "bold" }}>national level</span>. I also
-              enjoy rock climbing and talking to new people, so feel free to
-              connect with me and say hi!
-            </p>
+            <div ref={firstAboutRef}>
+              <span
+                className={`${
+                  firstAboutVisible ? styles.slideRight : styles.hidden
+                }`}
+              >
+                <p>
+                  Hey! I'm a third year Computer Science student at the
+                  University of Waterloo. I love learning{" "}
+                  <span
+                    className={`${
+                      firstAboutVisible ? styles.yellow : styles.hidden
+                    }`}
+                  >
+                    new technologies
+                  </span>{" "}
+                  and writing
+                  <span
+                    className={`${
+                      firstAboutVisible ? styles.lightgreen : styles.hidden
+                    }`}
+                  >
+                    {" "}
+                    efficient code
+                  </span>
+                  . From building responsive sites and developing optimized APIs
+                  to creating LLMs and CNNs, I'm passionate about everything
+                  fullstack and AI.
+                  {/* </span> */}
+                </p>
+              </span>
+            </div>
+
+            <br></br>
+            <br></br>
+            <div ref={secondAboutRef}>
+              <span
+                className={`${
+                  secondAboutVisible ? styles.slideRight : styles.hidden
+                }`}
+              >
+                <p>
+                  Outside of programming, I like soccer, travelling the world,
+                  and competing in math and music competitions at the{" "}
+                  <span style={{ fontWeight: "bold" }}>national level</span>. I
+                  also enjoy rock climbing and talking to new people, so feel
+                  free to connect with me and say hi!
+                </p>
+              </span>
+            </div>
             {/* <ul className={styles.aboutItems}>
               <li className={styles.aboutItem}>
                 <img

@@ -7,6 +7,7 @@
 .container {
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
+  min-height: 400px;
   border-radius: 15px;
   padding: 73px;
   /* margin-top: 129px; */
@@ -40,11 +41,70 @@
 
 .infoContainer {
   width: 60%;
-}
-
-.infoText {
+  overflow: hidden;
   font-size: 20px;
   color: var(--color-text);
+}
+
+.hidden {
+  color: rgba(12, 12, 12, 0.6) !important;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.lightgreen {
+  color: lightgreen;
+}
+
+.animateFirstAbout {
+  background-color: red;
+}
+
+/***** Global Slide *****/
+.slide-right,
+.slide-left {
+  display: inline-block;
+  width: 100%;
+}
+
+/***** Slide Right *****/
+.slide-right {
+  animation: 1s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Misc Styles *****/
+/* .container {
+  width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 25px #000;
+  margin-top: 30px;
+  border: 1px solid #444;
+  text-align: center;
+} */
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
 }
 
 .aboutImage {
