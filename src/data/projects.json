@@ -1,26 +1,57 @@
 [
   {
     "title": "Airbnb Reviews",
-    "imageSrc": "projects/airbnb-reviews.png",
+    "imageSrc": "projects/airbnb_reviews_2.png",
     "description": "Fullstack app for guests to review their recent Airbnb visit and search for their next location.",
     "skills": ["React", "Express", "Node", "MongoDB", "Heroku"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "demo": "https://airbnb-reviews-app-d8c3ec079981.herokuapp.com/",
+    "source": "https://github.com/Ryii/Airbnb-Reviews"
   },
   {
     "title": "Parkinson's Disease AI",
-    "imageSrc": "projects/determined-ai.png",
-    "description": "Multi-layer neural network predicting the progression of Parkinson's Disease in a patient.",
-    "skills": ["Tensorflow", "Determined", "Pandas", "Numpy", "AWS"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "imageSrc": "projects/determined_ai_2.png",
+    "description": "Multi-layer neural network predicting the yearly progression of Parkinson's Disease in a patient.",
+    "skills": [
+      "Tensorflow",
+      "Numpy",
+      "Pandas",
+      "Scikit-learn",
+      "Python",
+      "AWS"
+    ],
+    "demo": "https://devpost.com/software/parkinson-s-disease-progression-predictor",
+    "source": "https://github.com/Ryii/determined-ai-2023"
   },
   {
     "title": "RAIInet",
-    "imageSrc": "projects/raiinet.png",
-    "description": "Multiplayer strategy game similar to chess players try to score 4 points using tactics and abilities.",
+    "imageSrc": "projects/raiinet_2.png",
+    "description": "Multiplayer strategy game similar to chess players must score points using tactics and abilities.",
     "skills": ["C++", "XMing"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "demo": "n/a",
+    "source": "https://gitfront.io/r/user-4099492/K5rL8899VrZH/RAIINET/"
+  },
+  {
+    "title": "Captain Canada RPG",
+    "imageSrc": "projects/captain_canada.png",
+    "description": "Single player platform shooter game, created using HTML Canvas using custom sprites.",
+    "skills": ["JavaScript", "Canvas", "HTML", "CSS"],
+    "demo": "n/a",
+    "source": "https://github.com/Ryii/Captain-Canada-game"
+  },
+  {
+    "title": "Deep Learning AI Checkers Bot",
+    "imageSrc": "projects/checkers_ai.png",
+    "description": "High level checkers AI bot built using neural networks, featuring three difficulties.",
+    "skills": ["Python", "PyTorch", "CUDA", "Pygame"],
+    "demo": "n/a",
+    "source": "https://github.com/Ryii/Custom-Checkers-AI"
+  },
+  {
+    "title": "Personal Website",
+    "imageSrc": "projects/website.png",
+    "description": "The very website you're visiting right now! My portfolio, featuring project I've worked on :)",
+    "skills": ["React", "Vite", "Bootstrap", "CSS"],
+    "demo": "https://ryii.github.io/",
+    "source": "https://github.com/Ryii/Ryii.github.io"
   }
 ]

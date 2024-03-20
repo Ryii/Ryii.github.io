@@ -36,8 +36,8 @@ export const About = () => {
                 }`}
               >
                 <p>
-                  Hey! I'm a third year Computer Science student at the
-                  University of Waterloo. I love learning{" "}
+                  As a third year Computer Science student at the University of
+                  Waterloo, I love learning{" "}
                   <span
                     className={`${
                       firstAboutVisible ? styles.yellow : styles.hidden
@@ -62,7 +62,6 @@ export const About = () => {
               </span>
             </div>
 
-            <br></br>
             <br></br>
             <div ref={secondAboutRef}>
               <span

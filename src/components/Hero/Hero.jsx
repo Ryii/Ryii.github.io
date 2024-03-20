@@ -14,7 +14,7 @@ export const Hero = () => {
             Waterloo. I'm a passionate full-stack developer with 3 years of
             experience using Python, C++, and the MERN stack. Reach out if you'd
             like to learn more! */}
-            I'm a student who's passionate about software and ML.
+            I'm a student who's passionate about software and AI.
             {/* Feel free to reach out if you'd like to chat! */}
           </p>
           {/* <a href="mailto:myemail@email.com" className={styles.contactBtn}>
